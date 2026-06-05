@@ -2,20 +2,6 @@
 
 A machine learning-based web application for detecting Alopecia Areata from scalp images.
 
-## Features
-- Image upload
-- Hair loss detection
-- Prediction results
-- Streamlit web interface
-
-## Tech Stack
-- Python
-- Machine Learning
-- Streamlit
-- OpenCV
-- NumPy
-- Scikit-learn
-
 ## Installation
 
 ```bash
