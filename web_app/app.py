@@ -183,7 +183,9 @@ def load_model():
     Loads the checkpoint, rebuilds the model architecture based on the saved model name,
     loads the state dict, and sets the model to evaluation mode.
     """
-    checkpoint = torch.load("best_model.pth", map_location=device)
+    #checkpoint = torch.load("best_model.pth", map_location=device)
+    model_path = os.path.join(os.path.dirname(__file__), "best_model.pth")
+    checkpoint = torch.load(model_path, map_location=device)
     model_name = checkpoint["model_name"]
     state_dict = checkpoint["state_dict"]
     num_classes = 2  # Update if you have more classes
