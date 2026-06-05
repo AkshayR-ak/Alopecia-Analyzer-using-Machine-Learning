@@ -1,0 +1,13 @@
+streamlit
+torch
+torchvision
+pillow
+pandas
+matplotlib
+g4f
+
+
+#python -m venv venv
+#venv\Scripts\activate
+#pip install -r requirements.txt
+#streamlit run app.py
