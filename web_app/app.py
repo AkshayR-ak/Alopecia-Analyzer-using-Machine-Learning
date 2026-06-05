@@ -15,12 +15,19 @@ import matplotlib.pyplot as plt
 
 # ----- Additional Imports for GPT-4 Doctor Suggestions -----
 import asyncio
-from asyncio import WindowsSelectorEventLoopPolicy
+#from asyncio import WindowsSelectorEventLoopPolicy
 import time
 import g4f
 
 # Set the event loop policy for Windows
-asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())
+#asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())
+
+import platform
+import asyncio
+
+if platform.system() == "Windows":
+    from asyncio import WindowsSelectorEventLoopPolicy
+    asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())
 
 # ----- GPT-4 Functions -----
 # def generate_response(user_input):
